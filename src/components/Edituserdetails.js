@@ -60,7 +60,7 @@ const EditUserDetails = ({onClose,user}) => {
         e.preventDefault()
         e.stopPropagation()
         try {
-            const URL = `http://localhost:8080/api/updateuser`
+            const URL = `https://chatapi-virid.vercel.app/api/updateuser`
 
             const response = await axios({
                 method : 'post',

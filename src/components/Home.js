@@ -18,7 +18,7 @@ const Home = () => {
 
   const fetchUserDetails = async()=>{
     try {
-      const URL = `http://localhost:8080/api/userdetails`
+      const URL = `https://chatapi-virid.vercel.app/api/userdetails`
         const response = await axios({
           url : URL,
           withCredentials : true
@@ -41,7 +41,7 @@ const Home = () => {
   },[])
 
   useEffect(() => {
-    const socketConnection = io("http://localhost:8080",{
+    const socketConnection = io("https://chatapi-virid.vercel.app",{
       auth : {
         token : localStorage.getItem('token')
       },

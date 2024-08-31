@@ -13,7 +13,7 @@ const SearchUser = ({onClose}) => {
 
 
     const handleSearchUser = async()=>{
-        const URL = `http://localhost:8080/api/searchuser`
+        const URL = `https://chatapi-virid.vercel.app/api/searchuser`
         try {
             setLoading(true)
             const response = await axios.post(URL,{
